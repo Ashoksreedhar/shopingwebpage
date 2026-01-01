@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(46, 111, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 47px 0px #bab6b6;
+    height: 90px;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+
+.search {
+    /* background-color: #ceb4b4; */
+    box-shadow: 0px 0px 47px 0px #554f4f;
+    padding: 8px;
+    width: 550px;
+    width: 35%;
+    height: 40px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+
+}
+
+.search input {
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.navlink {
+    margin: 0px 30px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.catbtn {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+
+
+.btn {
+    margin: 0px 30px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+
+
+.text-content {
+    font-size: 70px;
+    font-weight: bold;
+    padding: 80px;
+    margin-top: 100px;
+    color: rgb(112, 26, 26);
+    line-height: 80px;
+}
+
+.shop-btn {
+    display: flex;
+    width: 150px;
+    background-color: rgb(231, 68, 68);
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 5px;
+    margin-left: 15em;
+    color: #fff;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.header {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+
+
+/* Product-list */
+.productlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.productcard {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(232, 223, 223);
+    -webkit-box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 15px 0px #e2dada;
+    border: none;
+    font-family: arial;
+    border-radius: 5px;
+
+}
+
+.productcard img {
+    height: 200px;
+    padding: 10px;
+
+}
+
+
+
+.Addbtn {
+    padding-block: 10px;
+    padding-inline: 10px;
+    margin-top: 20px;
+    width: 12em;
+    border: none;
+    font-weight: bold;
+    -webkit-box-shadow: -3px 0px 6px -3px rgba(0, 0, 0, 0.86);
+    box-shadow: -3px 0px 6px -3px rgba(0, 0, 0, 0.86);
+    color: #fff;
+    background-color: rgb(129, 128, 128);
+}
+
+
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+.app {
+    display: flex;
+}
+
+
+/* sidebar */
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+
+.box h4 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.box p {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: arial;
+
+}
+
+.box p:hover {
+    background-color: rgb(46, 111, 169);
+}
+
+
+/* media quer */
+
+@media screen and (max-width: 1200px) {
+    .text-content {
+        font-size: 50px;
+        padding: 5px;
+        margin-left: 20px;
+        margin-top: 100px;
+        line-height: 70px;
+    }
+
+    .shop-btn {
+        margin-left: 110px;
+        margin-top: 20px;
+    }
+
+    .productlist {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .productcard img {
+        height: 100px;
+        padding: 10px;
+
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .search {
+        padding: 8px;
+        width: 550px;
+        width: 50%;
+        height: 40px;
+        margin: 0px 0px;
+
+    }
+
+    .search input {
+        width: 380px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    .btn {
+        display: none;
+    }
+
+
+    .text-content {
+        font-size: 40px;
+        padding: 5px;
+        margin-left: 20px;
+        margin-top: 100px;
+        line-height: 50px;
+    }
+
+    .shop-btn {
+        margin-left: 110px;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .search {
+        padding: 8px;
+        width: 550px;
+        width: 50%;
+        height: 40px;
+        margin: 0px 0px;
+
+    }
+
+    .search input {
+        width: 380px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        color: #fff;
+    }
+
+
+    .btn {
+        display: none;
+    }
+
+    .text-content {
+        font-size: 30px;
+        padding: 15px;
+        margin-top: 200px;
+        line-height: 35px;
+    }
+
+    .shop-btn {
+        display: none;
+    }
+
+
+
+    .header {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .productlist {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 250px;
+        margin-left: 0px;
+    }
+
+    .productcard img {
+        height: 150px;
+        padding: 10px;
+
+    }
+
+    .productcard img {
+        height: 250px;
+
+    }
+
+
+
+    /* sidebar */
+    .sidebar {
+        width: 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 481px) {
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: -40px;
+    }
+
+    .search {
+        width: 60%;
+        height: 40px;
+        margin: 0px 0px;
+
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .text-content {
+        font-size: 20px;
+        padding: 15px;
+        margin-top: 150px;
+        line-height: 25px;
+    }
+
+    .shop-btn {
+        display: none;
+    }
+
+    .banner img {
+        width: 350px;
+        height: 350px;
+        margin-right: 0px;
+        margin-top: 100px;
+    }
+
+
+    .header {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .productlist {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 250px;
+    }
+
+    .productcard img {
+        height: 250px;
+
+    }
+
+
+
+    /* sidebar */
+    .sidebar {
+        width: 0px;
+
+    }
+
+
+}
